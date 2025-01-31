@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakpot Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Jakpot Card Game 🎮</h1>
+
+        <!-- Player Entry -->
+        <div class="input-group">
+            <input type="text" id="playerName" placeholder="Enter player name">
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+
+        <!-- Game Setup -->
+        <div class="setup-group">
+            <input type="number" id="numSets" placeholder="Number of Sets">
+            <button onclick="startGame()" id="startButton">Start Game</button>
+        </div>
+
+        <!-- Players List -->
+        <div class="players-list">
+            <h2>Players</h2>
+            <div id="playersList" class="players-text"></div>
+        </div>
+
+        <!-- Game Status -->
+        <div id="gameStatus" class="status">Add players to start the game</div>
+
+        <!-- Points Entry -->
+        <div class="input-group">
+            <input type="number" id="points" placeholder="Enter points" disabled>
+            <button onclick="submitPoints()" id="submitButton" disabled>Submit Points</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
